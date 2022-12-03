@@ -95,7 +95,7 @@ def frame_range(scene):
 
 
 def bake_vertex_data(context, data, offsets, normals, size):
-    """Stores vertex offsets and normals in seperate image textures"""
+    """Stores vertex offsets and normals in separate image textures"""
     width, height = size
     offset_texture = data.images.new(
         name="offsets",
@@ -131,7 +131,7 @@ class OBJECT_OT_ProcessAnimMeshes(bpy.types.Operator):
     def allowed_modifiers(self):
         return [
             'ARMATURE', 'CAST', 'CURVE', 'DISPLACE', 'HOOK',
-            'LAPLACIANDEFORM', 'LATTICE', 'MESH_DEFORM', 'MESH_SEQUENCE_CACHE',
+            'LAPLACIANDEFORM', 'LATTICE', 'MESH_DEFORM', 'MESH_SEQUENCE_CACHE', 'MESH_CACHE',
             'SHRINKWRAP', 'SIMPLE_DEFORM', 'SMOOTH',
             'CORRECTIVE_SMOOTH', 'LAPLACIANSMOOTH',
             'SURFACE_DEFORM', 'WARP', 'WAVE',
